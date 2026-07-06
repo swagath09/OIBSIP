@@ -1,0 +1,28 @@
+# Aura Calculator
+
+A responsive calculator built using HTML, CSS, and JavaScript.
+
+## Features
+
+- Basic Arithmetic Operations
+- Modulus (%)
+- Decimal Support
+- Backspace
+- Clear (AC)
+- Keyboard Support
+- Division by Zero Handling
+- Responsive UI
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Live Demo
+
+https://oibsip-calculator-delta.vercel.app
+
+## GitHub Repository
+
+https://github.com/swagath09/OIBSIP
