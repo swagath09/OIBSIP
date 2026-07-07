@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <h1>
+
+            <i class="fa-solid fa-list-check"></i>
+
+            Smart Todo
+
+        </h1>
+
+        <p>
+
+            Stay Organized. Stay Productive.
+
+        </p>
+
+    </header>
+
+    <div class="container">
+
+        <div class="todo-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your task...">
+
+            <select id="priority">
+
+                <option value="High">High</option>
+
+                <option value="Medium">Medium</option>
+
+                <option value="Low">Low</option>
+
+            </select>
+
+            <input
+                type="date"
+                id="dueDate">
+
+            <button id="addBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Task
+
+            </button>
+
+        </div>
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchTask"
+                placeholder="Search task...">
+
+        </div>
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn" data-filter="pending">
+
+                Pending
+
+            </button>
+
+            <button class="filter-btn" data-filter="completed">
+
+                Completed
+
+            </button>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h2 id="totalTasks">
+
+                    0
+
+                </h2>
+
+                <p>Total Tasks</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="completedTasks">
+
+                    0
+
+                </h2>
+
+                <p>Completed</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="pendingTasks">
+
+                    0
+
+                </h2>
+
+                <p>Pending</p>
+
+            </div>
+
+        </div>
+
+        <div
+            id="taskList"
+            class="task-list">
+
+        </div>
+
+        <div
+            id="emptyMessage"
+            class="empty">
+
+            <i class="fa-solid fa-clipboard-list"></i>
+
+            <h3>No Tasks Yet</h3>
+
+            <p>
+
+                Start by adding your first task.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <button id="topBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
