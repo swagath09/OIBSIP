@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | AuthFlow</title>
+
+    <link rel="stylesheet" href="auth.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+
+            <h1>Create Account 🚀</h1>
+
+            <p>
+
+                Register to get started.
+
+            </p>
+
+            <form id="registerForm">
+
+                <div class="input-box">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create password"
+                            required>
+
+                        <i class="fa-solid fa-eye togglePassword"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm password"
+                            required>
+
+                        <i class="fa-solid fa-eye togglePassword"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            required>
+
+                        I agree to the Terms & Conditions
+
+                    </label>
+
+                </div>
+
+                <button type="submit">
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <div class="social-login">
+
+                <button>
+
+                    <i class="fab fa-google"></i>
+
+                    Google
+
+                </button>
+
+                <button>
+
+                    <i class="fab fa-facebook-f"></i>
+
+                    Facebook
+
+                </button>
+
+                <button>
+
+                    <i class="fab fa-github"></i>
+
+                    GitHub
+
+                </button>
+
+            </div>
+
+            <p class="register-link">
+
+                Already have an account?
+
+                <a href="index.html">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+        <div class="right">
+
+            <img
+                src="assets/images/login.png"
+                alt="Register">
+
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

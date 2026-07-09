@@ -1,0 +1,263 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+
+    padding:30px;
+
+}
+
+.dashboard-container{
+
+    width:100%;
+
+    max-width:700px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+    animation:fade .8s ease;
+
+}
+
+.avatar{
+
+    width:100px;
+
+    height:100px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.profile h1{
+
+    color:#111827;
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+.profile p{
+
+    color:#6b7280;
+
+    margin-bottom:35px;
+
+}
+
+.details{
+
+    display:grid;
+
+    gap:20px;
+
+    margin-bottom:35px;
+
+}
+
+.detail-box{
+
+    background:#f5f7fb;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:left;
+
+    transition:.3s;
+
+}
+
+.detail-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.detail-box h3{
+
+    color:#2563eb;
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+.detail-box p{
+
+    color:#374151;
+
+    font-size:16px;
+
+}
+
+#logoutBtn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-2px);
+
+}
+
+#logoutBtn i{
+
+    margin-right:8px;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+    padding:30px;
+
+}
+
+.profile h1{
+
+    font-size:28px;
+
+}
+
+.avatar{
+
+    width:80px;
+
+    height:80px;
+
+    font-size:36px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+body{
+
+    padding:15px;
+
+}
+
+.card{
+
+    padding:20px;
+
+}
+
+.profile h1{
+
+    font-size:24px;
+
+}
+
+.detail-box{
+
+    padding:15px;
+
+}
+
+#logoutBtn{
+
+    padding:14px;
+
+}
+
+}
